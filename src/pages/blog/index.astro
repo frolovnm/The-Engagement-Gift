@@ -1,0 +1,236 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+const blog = await getCollection('blog');
+const rings = await getCollection('rings');
+const anniversaries = await getCollection('anniversaries');
+const posts = [...blog, ...rings, ...anniversaries].sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.search-container {
+				margin-bottom: 2rem;
+				display: flex;
+				gap: 1rem;
+			}
+			#searchInput {
+				flex: 1;
+				padding: 0.75rem 1rem;
+				border: 2px solid #e5e7eb;
+				border-radius: 8px;
+				font-size: 1rem;
+				transition: border-color 0.2s ease;
+			}
+			#searchInput:focus {
+				outline: none;
+				border-color: rgb(var(--accent));
+			}
+			#filterSelect {
+				padding: 0.75rem 1rem;
+				border: 2px solid #e5e7eb;
+				border-radius: 8px;
+				font-size: 1rem;
+				background: white;
+				cursor: pointer;
+				transition: border-color 0.2s ease;
+			}
+			#filterSelect:focus {
+				outline: none;
+				border-color: rgb(var(--accent));
+			}
+			.search-results-text {
+				padding: 0.75rem 1rem;
+				color: rgb(var(--gray));
+				font-size: 0.9rem;
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul li {
+				width: calc(50% - 1rem);
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li:first-child {
+				width: 100%;
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+			ul li:first-child img {
+				width: 100%;
+			}
+			ul li:first-child .title {
+				font-size: 2.369rem;
+			}
+			ul li img {
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+			ul li a {
+				display: block;
+			}
+			.title {
+				margin: 0;
+				color: rgb(var(--black));
+				line-height: 1;
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			ul li a:hover h4,
+			ul li a:hover .date {
+				color: rgb(var(--accent));
+			}
+			ul a:hover img {
+				box-shadow: var(--box-shadow);
+			}
+			.no-results {
+				text-align: center;
+				padding: 2rem;
+				color: rgb(var(--gray));
+				font-size: 1.1rem;
+			}
+			@media (max-width: 720px) {
+				.search-container {
+					flex-direction: column;
+				}
+				ul {
+					gap: 0.5em;
+				}
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+				ul li:first-child {
+					margin-bottom: 0;
+				}
+				ul li:first-child .title {
+					font-size: 1.563em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<div class="search-container">
+					<input
+						type="text"
+						id="searchInput"
+						placeholder="Search posts by title..."
+						aria-label="Search blog posts"
+					/>
+					<select id="filterSelect" aria-label="Filter posts by category">
+						<option value="">All Categories</option>
+						<option value="blog">General</option>
+						<option value="rings">Rings</option>
+						<option value="anniversaries">Anniversaries</option>
+					</select>
+				</div>
+				<div id="searchResults" class="search-results-text"></div>
+				<ul id="postsList">
+					{
+						posts.map((post) => {
+							// Determine collection type
+							let collection = 'blog';
+							if ('collection' in post && post.collection === 'rings') {
+								collection = 'rings';
+							} else if ('collection' in post && post.collection === 'anniversaries') {
+								collection = 'anniversaries';
+							}
+							
+							return (
+								<li data-title={post.data.title.toLowerCase()} data-collection={collection}>
+									<a href={`/blog/${post.id}/`}>
+										{post.data.heroImage && (
+											<Image width={720} height={360} src={post.data.heroImage} alt="" />
+										)}
+										<h4 class="title">{post.data.title}</h4>
+										<p class="date">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</a>
+								</li>
+							);
+						})
+					}
+				</ul>
+				<div id="noResults" class="no-results" style="display: none;">
+					No posts found. Try a different search term.
+				</div>
+			</section>
+		</main>
+		<Footer />
+		<script>
+			const searchInput = document.getElementById('searchInput');
+			const filterSelect = document.getElementById('filterSelect');
+			const postsList = document.getElementById('postsList');
+			const noResults = document.getElementById('noResults');
+			const searchResults = document.getElementById('searchResults');
+			const posts = Array.from(postsList.querySelectorAll('li'));
+			const totalPosts = posts.length;
+
+			function filterAndSearch() {
+				const searchTerm = searchInput.value.toLowerCase();
+				const selectedFilter = filterSelect.value;
+
+				if (!searchTerm && !selectedFilter) {
+					posts.forEach(post => post.style.display = '');
+					noResults.style.display = 'none';
+					searchResults.textContent = '';
+					return;
+				}
+
+				let visibleCount = 0;
+				posts.forEach(post => {
+					const title = post.dataset.title;
+					const collection = post.dataset.collection;
+					
+					const matchesSearch = !searchTerm || title.includes(searchTerm);
+					const matchesFilter = !selectedFilter || collection === selectedFilter;
+					const matches = matchesSearch && matchesFilter;
+					
+					post.style.display = matches ? '' : 'none';
+					if (matches) visibleCount++;
+				});
+
+				if (visibleCount === 0) {
+					noResults.style.display = 'block';
+					searchResults.textContent = '';
+				} else {
+					noResults.style.display = 'none';
+					searchResults.textContent = `Found ${visibleCount} of ${totalPosts} posts`;
+				}
+			}
+
+			searchInput.addEventListener('input', filterAndSearch);
+			filterSelect.addEventListener('change', filterAndSearch);
+		</script>
+	</body>
+</html>
+	</body>
+</html>

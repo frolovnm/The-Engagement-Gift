@@ -1,0 +1,84 @@
+---
+import { SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import logo from '../assets/engagement-gift-blog-logo_new.png';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+		<div class="logo-section">
+			<a href="/" class="logo-link">
+				<Image src={logo} alt={SITE_TITLE} class="logo" />
+			</a>
+		</div>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/contact">Contact</HeaderLink>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+
+	.logo-section {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		transition: opacity 0.2s ease;
+	}
+
+	.logo-link:hover {
+		opacity: 0.8;
+	}
+
+	.logo {
+		height: 50px;
+		width: auto;
+		object-fit: contain;
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		position: relative;
+	}
+
+	.logo-section {
+		flex: 0 0 auto;
+		margin-right: auto;
+	}
+
+	.internal-links {
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	nav a {
+		padding: 1em 0.5em;
+		color: var(--black);
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: none;
+		border-bottom-color: var(--black);
+	}
+</style>

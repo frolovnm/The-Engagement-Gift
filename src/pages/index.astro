@@ -1,0 +1,473 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import engagedCoupleImage from '../assets/engaged-couple-holding-hands.jpg';
+
+// Get blog posts sorted by date (most recent first)
+const allPosts = await getCollection('blog');
+const trendingPosts = allPosts
+	.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+	.slice(0, 3);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero" style={`background-image: url('${engagedCoupleImage.src}'); background-size: cover; background-position: center;`}>
+				<div class="hero-content">
+					<h1>The Perfect Gift for Every "Yes".</h1>
+					<p class="subheadline">Expertly curated engagement gifts, ring sizing guides, and anniversary inspiration for every couple's journey.</p>
+					<div class="cta-buttons">
+						<a href="/blog" class="btn btn-primary">Browse Gift Guides</a>
+						<a href="/blog" class="btn btn-secondary">Find Their Ring Size</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Bento Grid Section -->
+			<section class="bento-grid">
+				<h2 class="section-title">Discover Your Perfect Gift</h2>
+				
+				<div class="grid">
+					<!-- Card 1: Gifts by Recipient -->
+					<div class="bento-card">
+						<div class="card-content">
+							<h3>Gifts by Recipient</h3>
+							<p>Find the perfect gift tailored to them—whether it's for him, her, or the happy couple.</p>
+							<a href="/blog" class="card-link">Explore →</a>
+						</div>
+					</div>
+
+					<!-- Card 2: Gifts by Budget -->
+					<div class="bento-card">
+						<div class="card-content">
+							<h3>Gifts by Budget</h3>
+							<p>From thoughtful under-$50 picks to luxurious splurges—we've got every price point covered.</p>
+							<a href="/blog" class="card-link">Shop by Budget →</a>
+						</div>
+					</div>
+
+					<!-- Card 3: The Ring Lab -->
+					<div class="bento-card">
+						<div class="card-content">
+							<h3>The Ring Lab</h3>
+							<p>Master ring sizing, learn care tips, and discover the stories behind engagement rings.</p>
+							<a href="/blog" class="card-link">Learn More →</a>
+						</div>
+					</div>
+
+					<!-- Card 4: Milestone Anniversaries -->
+					<div class="bento-card">
+						<div class="card-content">
+							<h3>Milestone Anniversaries</h3>
+							<p>Celebrate year 1, 5, 10, and beyond with gifts that honor your journey together.</p>
+							<a href="/blog" class="card-link">View Ideas →</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Trending Now Section -->
+			<section class="trending-now">
+				<div class="trending-container">
+					<h2>Trending Now</h2>
+					<p class="trending-subtitle">Our most-loved gift guides and ideas</p>
+					
+					<div class="trending-grid">
+						{trendingPosts.map((post, index) => (
+							<a href={`/blog/${post.id}`} class="trending-card">
+								<div class="card-image-wrapper">
+									{post.data.heroImage && (
+										<Image
+											src={post.data.heroImage}
+											alt={post.data.title}
+											class="card-image"
+										/>
+									)}
+									<div class="trending-badge">Trending #{index + 1}</div>
+								</div>
+								<div class="card-details">
+									<h3>{post.data.title}</h3>
+									<p>{post.data.description}</p>
+									<div class="read-more">Read the guide →</div>
+								</div>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<!-- Latest Articles Section -->
+			<section class="latest-articles">
+				<h2>Latest Gift Ideas & Guides</h2>
+				<p class="section-subtitle">Discover our newest engagement and anniversary gift recommendations.</p>
+				<p><a href="/blog">View all articles →</a></p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Hero Section */
+	.hero {
+		position: relative;
+		background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23667eea" width="1200" height="600"/></svg>');
+		background-size: cover;
+		background-position: center;
+		color: white;
+		padding: 6rem 2rem;
+		text-align: center;
+		margin-bottom: 4rem;
+		overflow: hidden;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: 1;
+	}
+
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	.hero h1 {
+		font-size: clamp(2rem, 8vw, 3.5rem);
+		font-weight: 700;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+		color: white;
+	}
+
+	.subheadline {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+		line-height: 1.6;
+		font-weight: 300;
+		color: white;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		border: none;
+		font-size: 1rem;
+	}
+
+	.btn-primary {
+		background-color: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn-primary:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		transform: translateY(-2px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-secondary {
+		background-color: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn-secondary:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		transform: translateY(-2px);
+	}
+
+	/* Bento Grid Section */
+	.bento-grid {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 4rem 2rem;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: clamp(1.5rem, 5vw, 2.5rem);
+		margin-bottom: 3rem;
+		color: rgb(var(--gray-dark));
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	@media (min-width: 768px) {
+		.grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 2rem;
+		}
+	}
+
+	.bento-card {
+		background: white;
+		border: 1px solid #e5e7eb;
+		border-radius: 12px;
+		padding: 2rem;
+		transition: all 0.3s ease;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.bento-card:hover {
+		border-color: #667eea;
+		box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+		transform: translateY(-5px);
+	}
+
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.bento-card h3 {
+		font-size: 1.3rem;
+		margin-bottom: 0.75rem;
+		color: rgb(var(--gray-dark));
+	}
+
+	.bento-card p {
+		color: rgb(var(--gray));
+		margin-bottom: 1.5rem;
+		flex-grow: 1;
+		line-height: 1.6;
+	}
+
+	.card-link {
+		color: #667eea;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.2s ease;
+		align-self: flex-start;
+	}
+
+	.card-link:hover {
+		color: #764ba2;
+		text-decoration: underline;
+	}
+
+	/* Trending Now Section */
+	.trending-now {
+		background: linear-gradient(180deg, rgba(102, 126, 234, 0.05) 0%, transparent 100%);
+		padding: 4rem 2rem;
+		margin-top: 4rem;
+	}
+
+	.trending-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.trending-now h2 {
+		font-size: clamp(1.5rem, 5vw, 2.5rem);
+		margin-bottom: 0.5rem;
+		color: rgb(var(--gray-dark));
+		text-align: center;
+	}
+
+	.trending-subtitle {
+		text-align: center;
+		color: rgb(var(--gray));
+		font-size: 1.1rem;
+		margin-bottom: 3rem;
+	}
+
+	.trending-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	@media (min-width: 768px) {
+		.trending-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.trending-card {
+		display: flex;
+		flex-direction: column;
+		background: white;
+		border-radius: 12px;
+		overflow: hidden;
+		text-decoration: none;
+		color: inherit;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		border: 1px solid #e5e7eb;
+	}
+
+	.trending-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+		border-color: #667eea;
+	}
+
+	.card-image-wrapper {
+		position: relative;
+		width: 100%;
+		height: 220px;
+		overflow: hidden;
+		background: #f3f4f6;
+	}
+
+	.card-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.trending-card:hover .card-image {
+		transform: scale(1.05);
+	}
+
+	.trending-badge {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		background: #667eea;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+
+	.card-details {
+		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.trending-card h3 {
+		font-size: 1.2rem;
+		margin-bottom: 0.75rem;
+		color: rgb(var(--gray-dark));
+		line-height: 1.4;
+	}
+
+	.trending-card p {
+		color: rgb(var(--gray));
+		font-size: 0.95rem;
+		margin-bottom: 1rem;
+		flex-grow: 1;
+		line-height: 1.6;
+	}
+
+	.read-more {
+		color: #667eea;
+		font-weight: 600;
+		font-size: 0.95rem;
+		transition: color 0.2s ease;
+	}
+
+	.trending-card:hover .read-more {
+		color: #764ba2;
+	}
+
+	/* Latest Articles Section */
+	.latest-articles {
+		background: #f9fafb;
+		padding: 4rem 2rem;
+		text-align: center;
+		margin-top: 4rem;
+	}
+
+	.latest-articles h2 {
+		font-size: clamp(1.5rem, 5vw, 2.2rem);
+		margin-bottom: 0.5rem;
+		color: rgb(var(--gray-dark));
+	}
+
+	.section-subtitle {
+		color: rgb(var(--gray));
+		margin-bottom: 2rem;
+		font-size: 1.1rem;
+	}
+
+	.latest-articles a {
+		color: #667eea;
+		font-weight: 600;
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
+
+	.latest-articles a:hover {
+		color: #764ba2;
+		text-decoration: underline;
+	}
+
+	@media (max-width: 640px) {
+		.hero {
+			padding: 4rem 1rem;
+			margin-bottom: 2rem;
+		}
+
+		.hero h1 {
+			font-size: 1.75rem;
+		}
+
+		.subheadline {
+			font-size: 1rem;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+		.grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

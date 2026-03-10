@@ -1,0 +1,20 @@
+---
+import "@pagefind/default-ui/css";
+---
+
+<search-component>
+  <div id="search" />
+</search-component>
+
+<script>
+  import { PagefindUI } from "@pagefind/default-ui";
+
+  new PagefindUI({ element: "#search" });
+</script>
+
+<style>
+  :global(.pagefind-ui) {
+    --border-width: 2px;
+    --border-radius: 8px;
+  }
+</style>
