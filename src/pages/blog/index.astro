@@ -9,8 +9,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const blog = await getCollection('blog');
 const rings = await getCollection('rings');
-const anniversaries = await getCollection('anniversaries');
-const posts = [...blog, ...rings, ...anniversaries].sort(
+const posts = [...blog, ...rings].sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -146,24 +145,28 @@ const posts = [...blog, ...rings, ...anniversaries].sort(
 					/>
 					<select id="filterSelect" aria-label="Filter posts by category">
 						<option value="">All Categories</option>
-						<option value="blog">General</option>
-						<option value="rings">Rings</option>
-						<option value="anniversaries">Anniversaries</option>
+						<option value="engagement">Engagement Gift Guide</option>
+						<option value="trending">Unique and Trending Gifts</option>
+						<option value="rings">The Ring Lab</option>
+						<option value="cultural">Cultural Engagement Gifts</option>
 					</select>
 				</div>
 				<div id="searchResults" class="search-results-text"></div>
 				<ul id="postsList">
-					{
-						posts.map((post) => {
-							// Determine collection type
-							let collection = 'blog';
-							if ('collection' in post && post.collection === 'rings') {
-								collection = 'rings';
-							} else if ('collection' in post && post.collection === 'anniversaries') {
-								collection = 'anniversaries';
+				{
+					posts.map((post) => {
+						// Determine collection type and map to categories
+						let collection = post.data.category || 'engagement'; // Use category if defined, default to engagement
+						if (!post.data.category && 'collection' in post) {
+							if (post.collection === 'rings') {
+								collection = 'rings'; // The Ring Lab
+							} else if (post.collection === 'anniversaries') {
+								collection = 'trending'; // Unique and Trending Gifts
 							}
-							
-							return (
+							// blog collection stays as 'engagement' (Engagement Gift Guide)
+						}
+
+						return (
 								<li data-title={post.data.title.toLowerCase()} data-collection={collection}>
 									<a href={`/blog/${post.id}/`}>
 										{post.data.heroImage && (
@@ -193,6 +196,13 @@ const posts = [...blog, ...rings, ...anniversaries].sort(
 			const searchResults = document.getElementById('searchResults');
 			const posts = Array.from(postsList.querySelectorAll('li'));
 			const totalPosts = posts.length;
+
+			// Check for filter parameter in URL
+			const urlParams = new URLSearchParams(window.location.search);
+			const filterParam = urlParams.get('filter');
+			if (filterParam) {
+				filterSelect.value = filterParam;
+			}
 
 			function filterAndSearch() {
 				const searchTerm = searchInput.value.toLowerCase();
@@ -229,6 +239,11 @@ const posts = [...blog, ...rings, ...anniversaries].sort(
 
 			searchInput.addEventListener('input', filterAndSearch);
 			filterSelect.addEventListener('change', filterAndSearch);
+			
+			// Apply filter on page load if filter parameter exists
+			if (filterParam) {
+				filterAndSearch();
+			}
 		</script>
 	</body>
 </html>

@@ -3,6 +3,12 @@ title: 'The Ultimate Engagement Gift Guide for Her'
 description: 'Discover meaningful, luxurious, and thoughtful engagement gifts that celebrate her style and personality.'
 pubDate: 'Mar 10 2026'
 heroImage: '../../assets/engagement-photo.jpg'
+keyPoints:
+  - "Personalized jewelry is a timeless gift that celebrates her engagement milestone"
+  - "Luxury experiences like spa days or weekend getaways create lasting memories"
+  - "Sentimental keepsakes such as engraved boxes or photo albums preserve special moments"
+  - "Budget-conscious options include personalized stationery and cocktail accessories"
+  - "Group gifting allows friends and family to contribute to more elaborate gift ideas"
 ---
 
 # The Ultimate Engagement Gift Guide for Her

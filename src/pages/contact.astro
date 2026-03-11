@@ -22,7 +22,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				<div class="contact-content">
 					<div class="contact-form-section">
 						<h2>Send us a Message</h2>
-						<form class="contact-form">
+						<form class="contact-form" id="contactForm" action="https://formspree.io/f/xpqypnej" method="POST">
 							<div class="form-group">
 								<label for="name">Name</label>
 								<input type="text" id="name" name="name" required />
@@ -45,6 +45,13 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 							<button type="submit" class="submit-btn">Send Message</button>
 						</form>
+						<script>
+							document.getElementById('contactForm').addEventListener('submit', () => {
+								setTimeout(() => {
+									document.getElementById('contactForm').reset();
+								}, 100);
+							});
+						</script>
 					</div>
 
 					<div class="contact-info-section">

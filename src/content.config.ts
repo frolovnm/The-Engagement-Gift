@@ -9,6 +9,8 @@ const baseSchema = ({ image }) =>
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: image().optional(),
+		keyPoints: z.array(z.string()).optional(),
+		category: z.enum(['engagement', 'trending', 'rings', 'cultural']).optional(),
 	});
 
 const blog = defineCollection({

@@ -31,7 +31,7 @@ Create `src/content/blog/my-first-post.md`:
 title: "Welcome to My Gift Blog"
 description: "The best gift ideas and guides"
 pubDate: 2024-03-10
-heroImage: "../assets/blog-placeholder-1.jpg"
+heroImage: "../assets/blog-placeholder-about.jpg"
 ---
 
 # Welcome!
