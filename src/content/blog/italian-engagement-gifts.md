@@ -1,7 +1,7 @@
 ---
 title: "The Art of the Italian Engagement: More Than Just a Promise"
 description: "Explore traditional and contemporary Italian engagement gifts that honor timeless customs and modern elegance."
-pubDate: 2026-03-11
+pubDate: 2026-03-05
 heroImage: '../../assets/italian-engagement-gifts.jpg'
 category: cultural
 keyPoints:
