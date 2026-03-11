@@ -17,7 +17,7 @@ Finding the right ring size for men can be tricky, especially when you want the 
 
 ## Understanding Ring Sizes
 
-Ring sizes are typically measured in US sizes, which range from 1 to 13 for men. However, international sizing can vary significantly. Here's what you need to know:
+Ring sizes are typically measured in US sizes, which range from 1 to 13 for men. However, international sizing can vary significantly. Here is what you need to know:
 
 ### US Ring Sizes
 - **Small:** Sizes 6-8 (ring circumference 47-53mm)
