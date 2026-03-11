@@ -15,6 +15,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  // Cloudflare Pages configuration
   output: 'static',
 });
