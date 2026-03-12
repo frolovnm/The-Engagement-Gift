@@ -12,20 +12,47 @@ import HeaderLink from './HeaderLink.astro';
 				<Image src={logo} alt={SITE_TITLE} class="logo" />
 			</a>
 		</div>
-		<div class="internal-links">
+		<div class="internal-links" id="navMenu">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/contact">Contact</HeaderLink>
 		</div>
+		<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 	</nav>
 </header>
+
+<script>
+	const menuToggle = document.getElementById('menuToggle');
+	const navMenu = document.getElementById('navMenu');
+
+	menuToggle?.addEventListener('click', () => {
+		navMenu?.classList.toggle('open');
+		menuToggle?.classList.toggle('open');
+	});
+
+	// Close menu when a link is clicked
+	const navLinks = navMenu?.querySelectorAll('a');
+	navLinks?.forEach(link => {
+		link.addEventListener('click', () => {
+			navMenu?.classList.remove('open');
+			menuToggle?.classList.remove('open');
+		});
+	});
+</script>
+
 <style>
 	header {
 		margin: 0;
 		padding: 0 1em;
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		position: relative;
+		z-index: 100;
 	}
 
 	.logo-section {
@@ -53,13 +80,14 @@ import HeaderLink from './HeaderLink.astro';
 	nav {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		width: 100%;
 		position: relative;
+		gap: 1em;
 	}
 
 	.logo-section {
 		flex: 0 0 auto;
-		margin-right: auto;
 	}
 
 	.internal-links {
@@ -71,14 +99,75 @@ import HeaderLink from './HeaderLink.astro';
 		transform: translateX(-50%);
 	}
 
+	.menu-toggle {
+		display: none;
+		flex-direction: column;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0.5em;
+		gap: 6px;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		flex-shrink: 0;
+	}
+
+	.menu-toggle span {
+		width: 28px;
+		height: 3px;
+		background-color: rgb(var(--black));
+		transition: all 0.3s ease;
+		border-radius: 2px;
+		display: block;
+	}
+
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--black);
 	}
+
+	@media (max-width: 768px) {
+		nav {
+			justify-content: space-between;
+		}
+
+		.internal-links {
+			position: fixed;
+			top: 70px;
+			left: 0;
+			right: 0;
+			transform: none;
+			flex-direction: column;
+			background: white;
+			padding: 0;
+			gap: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.3s ease;
+			box-shadow: 0 8px 16px rgba(var(--black), 10%);
+			z-index: 999;
+		}
+
+		.internal-links.open {
+			max-height: 300px;
+		}
+
+		.internal-links a {
+			padding: 1em;
+			border-bottom: 1px solid rgba(var(--black), 5%);
+			display: block;
+		}
+
+		.menu-toggle {
+			display: flex;
+		}
 </style>

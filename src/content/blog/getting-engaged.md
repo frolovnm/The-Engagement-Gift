@@ -1,7 +1,7 @@
 ---
 title: "The Ultimate Guide to Getting Engaged: Planning, Trends, & Finding the Perfect Gift"
 description: "Getting engaged celebrates love, commitment, and a shared future—and the proposal story is deeply personal with no 'right' way, only yours. From planning a meaningful proposal to navigating announcements and building your home together, this guide covers it all. Discover thoughtful engagement gifts for every budget, learn modern etiquette rules, and explore why experiential gifts often outshine registry items in creating lasting memories."
-pubDate: 2026-03-20
+pubDate: 2026-03-01
 heroImage: '../../assets/getting-engaged.jpg'
 summary: "Getting engaged celebrates love, commitment, and the beginning of a shared future. There's no 'right' way to propose—only yours. This comprehensive guide covers proposal planning, announcements, home building, modern etiquette, and finding the perfect engagement gifts. Discover why experiential gifts often outshine registry items in creating lasting memories."
 ---

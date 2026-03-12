@@ -1,0 +1,86 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title="Disclaimer" description="Disclaimer for The Engagement Gift" />
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 720px;
+				margin: auto;
+				padding: 1em;
+			}
+			h1 {
+				color: rgb(var(--gray-dark));
+				margin-bottom: 0.5em;
+			}
+			h2 {
+				color: rgb(var(--gray-dark));
+				margin-top: 1.5em;
+				margin-bottom: 0.5em;
+			}
+			p, li {
+				color: rgb(var(--gray-dark));
+				line-height: 1.6;
+				margin-bottom: 1em;
+			}
+			ul {
+				margin-left: 1.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div style="text-align: center; margin-bottom: 2em;">
+				<h1 style="margin-bottom: 0.5em;">Disclaimer</h1>
+			</div>
+			<p><strong>Last Updated:</strong> March 2026</p>
+
+			<h2>General Disclaimer</h2>
+			<p>
+				The information provided on theengagementgift.com (the "Site") is for general informational purposes only. We strive to provide accurate, up-to-date information; however, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics contained on the Site.
+			</p>
+
+			<h2>No Professional Advice</h2>
+			<p>
+				The content on this Site should not be construed as professional advice. The Engagement Gift is not liable for any decisions you make based on the information provided. If you require professional advice regarding gift selection, etiquette, or any other matter, please consult with a qualified professional.
+			</p>
+
+			<h2>Product and Pricing Information</h2>
+			<p>
+				While we strive to provide accurate product descriptions and pricing information, we do not warrant that such information is error-free. Product prices, availability, and descriptions are subject to change without notice. The inclusion of any product does not constitute an endorsement or recommendation from The Engagement Gift.
+			</p>
+
+			<h2>Limitation of Liability</h2>
+			<p>
+				In no event shall The Engagement Gift be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the Site or the information provided herein, even if we have been advised of the possibility of such damages.
+			</p>
+
+			<h2>External Links</h2>
+			<p>
+				Our Site may contain links to external websites. The Engagement Gift is not responsible for the content, accuracy, or practices of external websites. We do not endorse any external website or its content. Your use of external websites is at your own risk and subject to their terms and conditions.
+			</p>
+
+			<h2>User-Generated Content</h2>
+			<p>
+				Any opinions, suggestions, or comments submitted by users do not reflect the views or opinions of The Engagement Gift and are solely the responsibility of the person submitting them.
+			</p>
+
+			<h2>Changes to Disclaimer</h2>
+			<p>
+				We reserve the right to modify this disclaimer at any time. Changes will be effective immediately upon posting to the Site. Your continued use of the Site following the posting of revised terms means that you accept and agree to the changes.
+			</p>
+
+			<h2>Contact Us</h2>
+			<p>
+				If you have any questions about this Disclaimer, please contact us by visiting our <a href="/contact">Contact page</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

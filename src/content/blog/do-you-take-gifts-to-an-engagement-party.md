@@ -1,7 +1,7 @@
 ---
 title: "Engagement Party Gifts: To Give or Not to Give?"
 description: "Engagement party gifts are appreciated but not mandatory—your presence is the main event. The right gift ranges from $25–$75 and focuses on celebration over household essentials, like champagne, wine glasses, planning notebooks, or experience vouchers. Learn the modern etiquette rules for engagement parties, how much to spend based on your relationship, and why a handwritten card sometimes means more than the gift itself."
-pubDate: 2026-03-11
+pubDate: 2026-02-14
 heroImage: '../../assets/engagement-party-gifts.jpg'
 summary: "Engagement party gifts are appreciated but not required—your presence matters most. Budget $25–$75 for celebration-focused gifts like champagne, wine glasses, or experience vouchers rather than household essentials. Modern etiquette is flexible; handwritten cards often mean more than the gift itself. Your thoughtful presence at the party is the true celebration."
 ---
