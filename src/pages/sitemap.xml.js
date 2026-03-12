@@ -7,19 +7,19 @@ export async function GET(context) {
 
   // Generate sitemap entries for blog posts
   const blogEntries = blog.map((post) => ({
-    url: `${context.site}blog/${post.slug}/`,
+    url: `${context.site}blog/${post.id}/`,
     lastmod: post.data.updatedDate || post.data.pubDate,
   }));
 
   // Generate sitemap entries for rings collection
   const ringsEntries = rings.map((post) => ({
-    url: `${context.site}rings/${post.slug}/`,
+    url: `${context.site}rings/${post.id}/`,
     lastmod: post.data.updatedDate || post.data.pubDate,
   }));
 
   // Generate sitemap entries for anniversaries collection
   const anniversariesEntries = anniversaries.map((post) => ({
-    url: `${context.site}anniversaries/${post.slug}/`,
+    url: `${context.site}anniversaries/${post.id}/`,
     lastmod: post.data.updatedDate || post.data.pubDate,
   }));
 
