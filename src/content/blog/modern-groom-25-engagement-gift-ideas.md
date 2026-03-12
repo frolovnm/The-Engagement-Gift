@@ -79,7 +79,7 @@ Gifts that lean into who he is and the bond you share.
 
 18. **Personalized Cast Iron Skillet:** Some brands will forge a last name into the bottom of the pan—a true heirloom for the family kitchen.
 
-19. **Engagement Photo Session Gear:** A high-quality leather camera strap if he's into photography, or a nice outfit for their shoot.
+19. **Engagement Photo Session Gear:** A high-quality leather camera strap if he is into photography, or a nice outfit for their shoot.
 
 20. **Outdoor Fire Pit:** For the couple to sit around and decompress after a day of guest-list stress.
 
