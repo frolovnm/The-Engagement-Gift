@@ -3,6 +3,7 @@ title: "The Modern Groom: 25 Engagement Gift Ideas for Him That He'll Actually U
 description: "Discover 25 practical and thoughtful engagement gift ideas for the groom-to-be, from luxury bar accessories to tech essentials and personalized keepsakes."
 pubDate: 2026-03-12
 heroImage: ../../assets/25-engagement-gift-ideas-for-him.jpg
+summary: "Celebrate the groom-to-be with 25 practical and authentic engagement gifts. From premium bar accessories and travel tech to grooming essentials, hobby-focused gifts, and budget-friendly options, find something that matches his lifestyle and shows he's equally celebrated."
 ---
 
 When a couple gets engaged, the "Congratulations!" often comes with a flurry of floral arrangements, bridal planners, and diamond-themed accessories. But let's not forget the other half of the equation. Whether he's your brother, your best mate, or your future brother-in-law, the groom-to-be deserves a celebration that feels authentic to him.
