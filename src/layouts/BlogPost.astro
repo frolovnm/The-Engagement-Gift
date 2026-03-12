@@ -8,7 +8,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, keyPoints } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, keyPoints, summary } = Astro.props;
 ---
 
 <html lang="en">
@@ -61,31 +61,15 @@ const { title, description, pubDate, updatedDate, heroImage, keyPoints } = Astro
 				border-top: 1px solid #e0e7ff;
 				border-right: 1px solid #e0e7ff;
 				border-bottom: 1px solid #e0e7ff;
+				color: #667eea;
+				line-height: 1.6;
+				font-size: 1.05em;
 			}
 			.key-points h3 {
 				margin: 0 0 1em 0;
 				color: #667eea;
 				font-size: 1.1em;
 				font-weight: 600;
-			}
-			.key-points ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
-			.key-points li {
-				padding: 0.5em 0 0.5em 1.5em;
-				position: relative;
-				color: rgb(var(--gray-dark));
-				line-height: 1.6;
-			}
-			.key-points li:before {
-				content: "✓";
-				position: absolute;
-				left: 0;
-				color: #667eea;
-				font-weight: bold;
-				font-size: 1.1em;
 			}
 		</style>
 	</head>
@@ -112,6 +96,12 @@ const { title, description, pubDate, updatedDate, heroImage, keyPoints } = Astro
 						<h1>{title}</h1>
 						<hr />
 					</div>
+					{summary && (
+						<div class="key-points">
+							<h3>Summary</h3>
+							{summary}
+						</div>
+					)}
 					{keyPoints && keyPoints.length > 0 && (
 						<div class="key-points">
 							<h3>Key Points</h3>

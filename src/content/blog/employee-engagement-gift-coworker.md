@@ -3,12 +3,7 @@ title: "Employee Engagement Gift: What to Gift a Coworker Who Just Got Engaged"
 description: "Navigate office engagement gifting etiquette with our guide to the best gifts for coworkers, from desk essentials to relaxation gifts and group gift ideas."
 pubDate: 2026-03-13
 heroImage: ../../assets/employee-engagement-gifts.jpg
-keyPoints:
-  - "Group gifting is the gold standard in office settings"
-  - "Engagement gifts are optional but appreciated within 2 weeks of announcement"
-  - "Budget-friendly options range from ceramic ring dishes ($15-30) to personalized planners ($40-75)"
-  - "Experiential gifts like dinners or classes work best for team contributions"
-  - "The presentation and card matter as much as the gift itself"
+summary: "Navigate office engagement gifting with grace. Group gifts are standard; budget $15-75 for meaningful presents like ring dishes or personalized planners. Engagement gifts are optional but appreciated within two weeks. Experiential gifts and thoughtful presentations matter most in professional settings."
 ---
 
 An engagement is one of those rare "water cooler" moments that actually deserves the hype. When an office teammate announces they've said "Yes," the energy in the workplace shifts from spreadsheets to celebrations. But for the rest of the team, a common question arises: **What is the etiquette for office engagement gifting?**

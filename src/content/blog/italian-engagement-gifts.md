@@ -1,18 +1,11 @@
 ---
 title: "The Art of the Italian Engagement: More Than Just a Promise"
-description: "Explore traditional and contemporary Italian engagement gifts that honor timeless customs and modern elegance."
+description: "Italian engagement gifts celebrate timeless customs with handcrafted luxury like Venetian glassware, fine linens, and heritage wines. Steeped in the concept of 'di qualità' (of quality), these gifts are built to last a lifetime. From regional artisan treasures to family-heirloom pieces, this guide shows how 'Made in Italy' craftsmanship transforms engagement celebrations into meaningful investments in a couple's future."
 pubDate: 2026-03-05
 heroImage: '../../assets/italian-engagement-gifts.jpg'
 category: cultural
-keyPoints:
-  - "Italian engagement gifts should be 'di qualità' (of quality) and built to last a lifetime"
-  - "Traditional options include Venetian glassware, fine linens, and silverware"
-  - "Food and wine represent the Italian philosophy of celebration and family gatherings"
-  - "Regional gifts from specific areas of Italy show thoughtfulness and cultural awareness"
-  - "The 'Made in Italy' label represents craftsmanship and sustainability"
+summary: "Italian engagement gifts honor 'di qualità'—the concept of lasting quality and craftsmanship. Venetian glassware, fine linens, heritage wines, and regional artisan treasures embody the tradition of the corredo. These handcrafted luxury gifts celebrate the profound moment of fidanzamento, creating meaningful investments in a couple's future built to last a lifetime."
 ---
-
-# The Art of the Italian Engagement: More Than Just a Promise
 
 In Italy, an engagement (the *fidanzamento*) is not merely a social media announcement or a change in relationship status; it is a profound foundational moment for the family. While the "Big Day" gets the lion's share of the attention, the period of engagement is steeped in a specific etiquette known as *Galateo*.
 

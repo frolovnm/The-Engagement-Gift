@@ -10,6 +10,7 @@ const baseSchema = ({ image }) =>
 		updatedDate: z.coerce.date().optional(),
 		heroImage: image().optional(),
 		keyPoints: z.array(z.string()).optional(),
+		summary: z.string().optional(),
 		category: z.enum(['engagement', 'trending', 'rings', 'cultural']).optional(),
 	});
 

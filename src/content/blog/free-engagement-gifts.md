@@ -1,17 +1,10 @@
 ---
 title: "The Ultimate Guide to Free Engagement Gifts: Celebrate Love Without Spending a Cent"
-description: "Discover thoughtful, meaningful engagement gift ideas that cost nothing but mean everything—from time and labor to sentimental gestures."
+description: "The best engagement gifts don't cost a dime—they cost time, sentiment, and service. From offering to be the wedding day runner to creating custom love-story videos and family recipe collections, free gifts often outshine expensive registry items. This guide reveals how your skills (photography, graphic design, playlist curation) and thoughtful gestures create more meaningful memories than anything money can buy."
 pubDate: 2026-03-14
 heroImage: '../../assets/free-engagement-gifts.jpg'
-keyPoints:
-  - "The best engagement gifts often don't come with a price tag but rather involve time, sentiment, or service"
-  - "Wedding planning is overwhelming—offering practical help like vendor research or day-of assistance is invaluable"
-  - "Sentimental gifts like family recipes, love story videos, or heirlooms create lasting memories"
-  - "Your skills matter—photography, graphic design, or playlist curation are premium gifts with zero cost"
-  - "Free gifts often outshine expensive registry items because they show personal investment in the couple's happiness"
+summary: "The best engagement gifts cost time and sentiment, not money. Offer wedding day support, create custom videos, curate playlists, or share family recipes. Your skills in photography, design, or event planning create more meaningful memories than expensive registry items. Free gifts focusing on connection and service often outshine luxurious presents."
 ---
-
-# The Ultimate Guide to Free Engagement Gifts: Celebrate Love Without Spending a Cent
 
 Congratulations! Someone you care about just said "Yes," and the celebratory champagne is flowing. Naturally, you want to mark the occasion with a thoughtful gesture. But here's the reality: between the upcoming wedding travel, bachelor/bachelorette parties, and the inevitable registry splurge, your wallet might be feeling a little light.
 

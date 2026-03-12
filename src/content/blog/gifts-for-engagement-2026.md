@@ -1,17 +1,10 @@
 ---
 title: "Engagement Gifts in 2026: Trends, Etiquette, and Ideas for Every Budget"
-description: "Discover the top engagement gift trends for 2026, from personalized keepsakes to high-tech wellness gifts and experiential rewards."
+description: "In 2026, engagement gifts shift toward minimalist luxury, personalization, and wellness—from custom star maps and personalized comics to smart rings and experiential rewards. Data shows 85% of couples prefer experiences over objects, while sustainability and high utility dominate choices. Spend approximately one-third of your planned wedding gift ($25–$250+) on a present that celebrates quality and connection over consumption."
 pubDate: 2026-03-17
 heroImage: '../../assets/gift-for-engagement.jpg'
-keyPoints:
-  - "2026 engagement gifting focuses on quality over quantity, with an emphasis on minimalist luxury and sustainability"
-  - "Personalized gifts have evolved to include custom art, star maps, and even personalized comic books telling the couple's story"
-  - "High-tech wellness gifts like smart rings and digital picture frames are trending as couples manage wedding planning stress"
-  - "Experiential gifts outrank physical objects, with 85% of couples reporting higher satisfaction from experiences"
-  - "Engagement gifts should cost approximately one-third of your planned wedding gift, ranging from $25-$250+ depending on your relationship"
+summary: "In 2026, engagement gifts prioritize minimalist luxury, personalization, and wellness over quantity. Couples prefer experiences (85%) over objects, with custom star maps, smart rings, and personalized art trending. Budget one-third of your wedding gift ($25–$250+) on high-utility, sustainable presents that celebrate quality and connection over consumption."
 ---
-
-# Engagement Gifts in 2026: Trends, Etiquette, and Ideas for Every Budget
 
 Choosing the perfect engagement gift in 2026 is about more than just checking an item off a registry. This year, the focus has shifted toward curated experiences, high-tech wellness, and hyper-personalized keepsakes that celebrate the couple's unique story.
 

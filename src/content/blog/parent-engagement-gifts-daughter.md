@@ -1,17 +1,10 @@
 ---
 title: "Engagement Gifts from Parents: Celebrating Your Daughter's 'Yes'"
-description: "Thoughtful engagement gift ideas for parents to give their daughters, from sentimental keepsakes to practical luxuries."
+description: "Parent engagement gifts celebrate your daughter's milestone with sentimental touches like personalized journals, luxury home essentials, and meaningful experiences. Unlike traditional wedding gifts, these focus on honoring the daughter individually while acknowledging her emotional journey. From DIY legacy journals and experience packages to upgraded home staples, discover how to create a gift that becomes a cherished keepsake of this transformative moment."
 pubDate: 2026-03-08
 heroImage: '../../assets/parent-engagement-gift-daughter.jpg'
-keyPoints:
-  - "Engagement gifts from parents focus on sentimental value and the emotional milestone of getting engaged"
-  - "Popular options include personalized journals, luxury home essentials, and experience-based gifts"
-  - "Unlike wedding gifts for the couple, engagement gifts often celebrate the daughter individually"
-  - "Parent engagement gifts typically range from $100–$500 depending on circumstances"
-  - "The most meaningful gifts acknowledge the transition and support the planning journey ahead"
+summary: "Celebrate your daughter's engagement with sentimental gifts that honor her individually. Personalized journals, luxury home essentials, and meaningful experiences create cherished keepsakes of this transformative moment. Parent engagement gifts differ from wedding gifts by focusing on the daughter's emotional journey and personal milestone rather than household essentials."
 ---
-
-# Engagement Gifts from Parents: Celebrating Your Daughter's "Yes"
 
 When your daughter calls to say, "I'm engaged!" the world seems to stop for a moment. After the initial tears and celebratory toasts, many parents find themselves asking a classic question: **Do we give an engagement gift, or wait for the wedding?**
 
