@@ -73,7 +73,7 @@ He is going to be in more photos in the next 12 months than he has been in the l
 
 Gifts that lean into who he is and the bond you share.
 
-16. **Customized Golf Balls:** If he's a golfer, a box of "Property of the Groom" or "Wedding Date" golf balls is a fun, low-pressure gift.
+16. **Customized Golf Balls:** If he is a golfer, a box of "Property of the Groom" or "Wedding Date" golf balls is a fun, low-pressure gift.
 
 17. **The "Night We Met" Star Map:** A framed graphic showing the constellation alignment on the night he proposed.
 
