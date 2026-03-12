@@ -2,6 +2,7 @@
 title: "10-Year Anniversary Gifts: Tin & Aluminum Ideas"
 description: "Celebrate a decade of marriage with stunning tin and aluminum anniversary gifts that mark strength, durability, and enduring love."
 pubDate: 2026-03-08
+updatedDate: 2026-03-13
 heroImage: '../../assets/ten-years-anniversary-gift-ideas.jpg'
 keyPoints:
   - "Tin symbolizes strength and flexibility, reflecting the durability of a 10-year marriage"

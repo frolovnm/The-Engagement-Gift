@@ -2,6 +2,7 @@
 title: 'How to Find the Perfect Ring Size: A Complete Guide'
 description: 'Master ring sizing with our detailed guide. Learn professional techniques to measure accurately without spoiling the surprise.'
 pubDate: 'Feb 08 2026'
+updatedDate: 2026-03-13
 heroImage: '../../assets/how-to-measure-ring-size-at-home.jpg'
 summary: "Find the perfect ring size discreetly using proven techniques that won't spoil the surprise. Trace existing rings, use the string method, or ask trusted friends for help. Ring sizes vary by temperature and time of day, so measure accuracy is crucial. Most jewelers offer free resizing within the first year of purchase."
 ---

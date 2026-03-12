@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import engagedCoupleImage from '../assets/engaged-couple-holding-hands.jpg';
+const lastUpdated = '2026-03-13';
 
 // Get blog posts sorted by date (most recent first)
 const allPosts = await getCollection('blog');

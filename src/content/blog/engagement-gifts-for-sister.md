@@ -2,6 +2,7 @@
 title: "The Ultimate Guide: 30 Thoughtful Engagement Gifts for Your Sister She'll Cherish"
 description: "Discover 30 meaningful engagement gift ideas for your sister, from personalized keepsakes to luxury items and budget-friendly options that celebrate your special bond."
 pubDate: 2026-03-12
+updatedDate: 2026-03-13
 heroImage: ../../assets/30-best-sister-engagement-gift-ideas.jpg
 summary: "Find the perfect engagement gift for your sister with our guide to 30 thoughtful ideas spanning personalized keepsakes, luxury gifts, budget-friendly options, DIY projects, and gifts for the couple. Each gift celebrates the unique bond you share and honors her special milestone."
 ---

@@ -2,6 +2,7 @@
 title: "Year 1 Anniversary Gifts: Paper & Traditional Ideas"
 description: "Celebrate your first year of marriage with meaningful paper and traditional anniversary gifts that mark this special milestone."
 pubDate: 2026-03-09
+updatedDate: 2026-03-13
 heroImage: '../../assets/one-year-anniversary-gift-ideas.jpg'
 keyPoints:
   - "Paper symbolizes the fragile yet precious nature of new marriage, making it the traditional first-year gift"

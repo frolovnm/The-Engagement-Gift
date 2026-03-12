@@ -2,6 +2,7 @@
 title: "The Ultimate Guide to Free Engagement Gifts: Celebrate Love Without Spending a Cent"
 description: "The best engagement gifts don't cost a dime—they cost time, sentiment, and service. From offering to be the wedding day runner to creating custom love-story videos and family recipe collections, free gifts often outshine expensive registry items. This guide reveals how your skills (photography, graphic design, playlist curation) and thoughtful gestures create more meaningful memories than anything money can buy."
 pubDate: 2026-02-17
+updatedDate: 2026-03-13
 heroImage: '../../assets/free-engagement-gifts.jpg'
 summary: "The best engagement gifts cost time and sentiment, not money. Offer wedding day support, create custom videos, curate playlists, or share family recipes. Your skills in photography, design, or event planning create more meaningful memories than expensive registry items. Free gifts focusing on connection and service often outshine luxurious presents."
 ---

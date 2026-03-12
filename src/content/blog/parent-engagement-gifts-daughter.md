@@ -2,6 +2,7 @@
 title: "Engagement Gifts from Parents: Celebrating Your Daughter's 'Yes'"
 description: "Parent engagement gifts celebrate your daughter's milestone with sentimental touches like personalized journals, luxury home essentials, and meaningful experiences. Unlike traditional wedding gifts, these focus on honoring the daughter individually while acknowledging her emotional journey. From DIY legacy journals and experience packages to upgraded home staples, discover how to create a gift that becomes a cherished keepsake of this transformative moment."
 pubDate: 2026-02-10
+updatedDate: 2026-03-13
 heroImage: '../../assets/parent-engagement-gift-daughter.jpg'
 summary: "Celebrate your daughter's engagement with sentimental gifts that honor her individually. Personalized journals, luxury home essentials, and meaningful experiences create cherished keepsakes of this transformative moment. Parent engagement gifts differ from wedding gifts by focusing on the daughter's emotional journey and personal milestone rather than household essentials."
 ---
