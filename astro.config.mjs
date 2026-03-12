@@ -13,7 +13,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap({
     filter: (page) => !page.includes('/thank-you') && !page.includes('/admin'),
   })],
-
+  compressHTML: true,
   vite: {
     plugins: [tailwindcss()],
   },
