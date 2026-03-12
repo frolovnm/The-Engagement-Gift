@@ -43,7 +43,7 @@ If he's the type to host a poker night or enjoy a quiet drink after a long day o
 
 ### Tech & Travel Essentials
 
-With a honeymoon and potentially a destination wedding on the horizon, high-quality gear is a godsend.
+With a honeymoon and potentially a destination wedding on the horizon, high-quality gear is a godsend!
 
 6. **Leather Tech Organizer:** A sleek roll-up case for his chargers, AirPods, and cables. It's the ultimate "adulting" upgrade.
 
