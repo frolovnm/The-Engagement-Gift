@@ -57,7 +57,7 @@ With a honeymoon and potentially a destination wedding on the horizon, high-qual
 
 ### Grooming & Style for the "Big Day"
 
-He's going to be in more photos in the next 12 months than he has been in the last 12 years. Help him look the part.
+He is going to be in more photos in the next 12 months than he has been in the last 12 years. Help him look the part.
 
 11. **Safety Razor Shave Kit:** A vintage-inspired kit with a badger-hair brush and sandalwood cream for the closest shave of his life.
 
