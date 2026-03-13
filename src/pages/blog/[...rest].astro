@@ -7,11 +7,26 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
+const POSTS_PER_PAGE = 12;
+
+// Get all posts
 const blog = await getCollection('blog');
 const rings = await getCollection('rings');
-const posts = [...blog, ...rings].sort(
+const allPosts = [...blog, ...rings].sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+// Determine current page from URL params
+const pageParam = Astro.params.rest;
+const currentPage = pageParam ? parseInt(pageParam) : 1;
+
+const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+const endIndex = startIndex + POSTS_PER_PAGE;
+const posts = allPosts.slice(startIndex, endIndex);
+
+const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+const prevPage = currentPage > 1 ? currentPage - 1 : null;
+const nextPage = currentPage < totalPages ? currentPage + 1 : null;
 ---
 
 <!doctype html>
@@ -72,17 +87,6 @@ const posts = [...blog, ...rings].sort(
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
 			ul li img {
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
@@ -112,6 +116,53 @@ const posts = [...blog, ...rings].sort(
 				color: rgb(var(--gray));
 				font-size: 1.1rem;
 			}
+			.pagination {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 0.5rem;
+				margin-top: 3rem;
+				padding-top: 2rem;
+				border-top: 1px solid #e5e7eb;
+				flex-wrap: wrap;
+			}
+			.pagination a,
+			.pagination button,
+			.pagination span {
+				padding: 0.5rem 1rem;
+				border: 1px solid #e5e7eb;
+				border-radius: 6px;
+				text-decoration: none;
+				color: rgb(var(--black));
+				transition: 0.2s ease;
+				background: white;
+				cursor: pointer;
+				font-size: 1rem;
+				font-family: inherit;
+			}
+			.pagination a:hover,
+			.pagination button:not(:disabled):hover {
+				background-color: rgb(var(--accent));
+				color: white;
+				border-color: rgb(var(--accent));
+			}
+			.pagination .current {
+				background-color: rgb(var(--accent));
+				color: white;
+				border-color: rgb(var(--accent));
+				cursor: default;
+				font-weight: bold;
+			}
+			.pagination button:disabled {
+				opacity: 0.4;
+				cursor: not-allowed;
+			}
+			.page-info {
+				text-align: center;
+				color: rgb(var(--gray));
+				margin-top: 1rem;
+				font-size: 0.9rem;
+			}
 			@media (max-width: 720px) {
 				.search-container {
 					flex-direction: column;
@@ -123,11 +174,14 @@ const posts = [...blog, ...rings].sort(
 					width: 100%;
 					text-align: center;
 				}
-				ul li:first-child {
-					margin-bottom: 0;
+				.pagination {
+					gap: 0.3rem;
 				}
-				ul li:first-child .title {
-					font-size: 1.563em;
+				.pagination a,
+				.pagination button,
+				.pagination span {
+					padding: 0.4rem 0.7rem;
+					font-size: 0.9rem;
 				}
 			}
 		</style>
@@ -185,6 +239,30 @@ const posts = [...blog, ...rings].sort(
 				<div id="noResults" class="no-results" style="display: none;">
 					No posts found. Try a different search term.
 				</div>
+				<nav class="pagination">
+					{prevPage ? (
+						<a href={prevPage === 1 ? '/blog/' : `/blog/${prevPage}/`}>← Previous</a>
+					) : (
+						<button disabled>← Previous</button>
+					)}
+					
+				{Array.from({ length: totalPages }, (_, i) => {
+					const pageNum = i + 1;
+					if (pageNum === currentPage) {
+						return <button disabled>{pageNum}</button>;
+					} else if (pageNum === 1) {
+						return <a href="/blog/">{pageNum}</a>;
+					} else {
+						return <a href={`/blog/${pageNum}/`}>{pageNum}</a>;
+					}
+				})}
+					
+					{nextPage ? (
+						<a href={`/blog/${nextPage}/`}>Next →</a>
+					) : (
+						<button disabled>Next →</button>
+					)}
+				</nav>
 			</section>
 		</main>
 		<Footer />
@@ -245,7 +323,5 @@ const posts = [...blog, ...rings].sort(
 				filterAndSearch();
 			}
 		</script>
-	</body>
-</html>
 	</body>
 </html>
