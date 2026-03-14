@@ -12,27 +12,21 @@ export async function GET(context) {
 
   // Generate sitemap entries for rings collection
   const ringsEntries = rings.map((post) => ({
-    url: `${context.site}rings/${post.id}/`,
-    lastmod: post.data.updatedDate || post.data.pubDate,
-  }));
-
-  // Generate sitemap entries for anniversaries collection
-  const anniversariesEntries = anniversaries.map((post) => ({
-    url: `${context.site}anniversaries/${post.id}/`,
+    url: `${context.site}blog/${post.id}/`,
     lastmod: post.data.updatedDate || post.data.pubDate,
   }));
 
   // Static pages with lastmod dates
   const staticPages = [
-    { url: `${context.site}`, lastmod: '2026-03-13' },
-    { url: `${context.site}about/`, lastmod: '2026-03-13' },
-    { url: `${context.site}contact/`, lastmod: '2026-03-13' },
-    { url: `${context.site}privacy-policy/`, lastmod: '2026-03-13' },
-    { url: `${context.site}disclaimer/`, lastmod: '2026-03-13' },
+    { url: `${context.site}`, lastmod: '2026-03-14' },
+    { url: `${context.site}about/`, lastmod: '2026-03-14' },
+    { url: `${context.site}contact/`, lastmod: '2026-03-14' },
+    { url: `${context.site}privacy-policy/`, lastmod: '2026-03-14' },
+    { url: `${context.site}disclaimer/`, lastmod: '2026-03-14' },
   ];
 
   // Combine all entries
-  const allEntries = [...blogEntries, ...ringsEntries, ...anniversariesEntries, ...staticPages];
+  const allEntries = [...blogEntries, ...ringsEntries, ...staticPages];
 
   // Sort by URL for consistency
   allEntries.sort((a, b) => a.url.localeCompare(b.url));
