@@ -7,7 +7,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog' | 'rings' | 'anniversaries'>['data'] & {
+type Props = CollectionEntry<'blog' | 'rings'>['data'] & {
 	showRelated?: boolean;
 };
 
@@ -18,8 +18,6 @@ const currentPath = Astro.url.pathname;
 let collection = 'blog';
 if (currentPath.includes('/rings/')) {
 	collection = 'rings';
-} else if (currentPath.includes('/anniversaries/')) {
-	collection = 'anniversaries';
 }
 
 // Get posts from the same collection for related articles

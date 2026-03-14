@@ -28,11 +28,4 @@ const rings = defineCollection({
 	schema: baseSchema,
 });
 
-const anniversaries = defineCollection({
-	// Load Markdown and MDX files in the `src/content/anniversaries/` directory.
-	loader: glob({ base: './src/content/anniversaries', pattern: '**/*.{md,mdx}' }),
-	// Type-check frontmatter using a schema
-	schema: baseSchema,
-});
-
-export const collections = { blog, rings, anniversaries };
+export const collections = { blog, rings };

@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 export async function GET(context) {
   const blog = await getCollection('blog');
   const rings = await getCollection('rings');
-  const anniversaries = await getCollection('anniversaries');
 
   // Generate sitemap entries for blog posts
   const blogEntries = blog.map((post) => ({

@@ -214,10 +214,8 @@ const nextPage = currentPage < totalPages ? currentPage + 1 : null;
 						if (!post.data.category && 'collection' in post) {
 							if (post.collection === 'rings') {
 								collection = 'rings'; // The Ring Lab
-							} else if (post.collection === 'anniversaries') {
-								collection = 'trending'; // Unique and Trending Gifts
-							}
-							// blog collection stays as 'engagement' (Engagement Gift Guide)
+						}
+						// blog collection stays as 'engagement' (Engagement Gift Guide)
 						}
 
 						return (

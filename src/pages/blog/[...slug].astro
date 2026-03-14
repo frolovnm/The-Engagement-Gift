@@ -7,8 +7,7 @@ export const prerender = true;
 export async function getStaticPaths() {
 	const blog = await getCollection('blog');
 	const rings = await getCollection('rings');
-	const anniversaries = await getCollection('anniversaries');
-	const posts = [...blog, ...rings, ...anniversaries];
+	const posts = [...blog, ...rings];
 	
 	return posts.map((post) => ({
 		params: { slug: post.id },
@@ -16,7 +15,7 @@ export async function getStaticPaths() {
 	}));
 }
 
-type Props = CollectionEntry<'blog' | 'rings' | 'anniversaries'>;
+type Props = CollectionEntry<'blog' | 'rings'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
