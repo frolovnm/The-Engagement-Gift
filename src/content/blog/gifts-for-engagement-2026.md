@@ -4,6 +4,7 @@ description: "In 2026, engagement gifts shift toward minimalist luxury, personal
 pubDate: 2026-02-19
 updatedDate: 2026-03-13
 heroImage: '../../assets/gift-for-engagement.jpg'
+alt: 'Top engagement gift ideas for 2026'
 summary: "In 2026, engagement gifts prioritize minimalist luxury, personalization, and wellness over quantity. Couples prefer experiences (85%) over objects, with custom star maps, smart rings, and personalized art trending. Budget one-third of your wedding gift ($25–$250+) on high-utility, sustainable presents that celebrate quality and connection over consumption."
 ---
 

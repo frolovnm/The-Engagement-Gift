@@ -4,6 +4,7 @@ description: "Parent engagement gifts celebrate your daughter's milestone with s
 pubDate: 2026-02-10
 updatedDate: 2026-03-13
 heroImage: '../../assets/parent-engagement-gift-daughter.jpg'
+alt: 'Best engagement gift ideas from parents to daughter'
 summary: "Celebrate your daughter's engagement with sentimental gifts that honor her individually. Personalized journals, luxury home essentials, and meaningful experiences create cherished keepsakes of this transformative moment. Parent engagement gifts differ from wedding gifts by focusing on the daughter's emotional journey and personal milestone rather than household essentials."
 ---
 

@@ -4,6 +4,7 @@ description: "Italian engagement gifts celebrate timeless customs with handcraft
 pubDate: 2026-02-05
 updatedDate: 2026-03-13
 heroImage: '../../assets/italian-engagement-gifts.jpg'
+alt: 'Italian engagement gift ideas and traditions'
 category: cultural
 summary: "Italian engagement gifts honor 'di qualità'—the concept of lasting quality and craftsmanship. Venetian glassware, fine linens, heritage wines, and regional artisan treasures embody the tradition of the corredo. These handcrafted luxury gifts celebrate the profound moment of fidanzamento, creating meaningful investments in a couple's future built to last a lifetime."
 ---

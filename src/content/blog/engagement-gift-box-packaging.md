@@ -3,7 +3,8 @@ title: "Why the Engagement Gift Box is as Important as the Gift Itself"
 description: "Discover how to elevate your engagement gift with stunning packaging, from luxurious materials to personalized touches that create an unforgettable unboxing experience."
 pubDate: 2026-03-12
 updatedDate: 2026-03-13
-heroImage: ../../assets/engagement-gift-box.jpg
+heroImage: '../../assets/engagement-gift-box.jpg'
+alt: 'Creative engagement gift box packaging ideas'
 summary: "Learn why engagement gift packaging matters in 2026 and how to create an unforgettable unboxing experience. Explore luxury materials, personalization options, sustainable design trends, and expert tips for choosing or creating the perfect engagement gift box that becomes a keepsake itself."
 ---
 

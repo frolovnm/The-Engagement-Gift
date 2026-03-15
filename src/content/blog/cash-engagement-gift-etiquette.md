@@ -4,6 +4,7 @@ description: "Navigate engagement gift cash amounts with confidence. Learn etiqu
 pubDate: 2026-03-14
 updatedDate: 2026-03-14
 heroImage: '../../assets/what-is-an-appropriate-cash-gift-for-an-engagement-party.jpg'
+alt: 'How much cash to give as an engagement party gift'
 category: "engagement"
 summary: "Confused about how much cash to give as an engagement gift? Discover modern etiquette guidelines for different relationships, venue types, and financial situations. Learn how to present cash gifts gracefully, compare options like gift cards, and ensure your monetary gift feels personal and thoughtful."
 ---

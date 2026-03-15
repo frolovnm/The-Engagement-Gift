@@ -4,6 +4,7 @@ description: "Getting engaged celebrates love, commitment, and a shared futureâ€
 pubDate: 2026-03-01
 updatedDate: 2026-03-13
 heroImage: '../../assets/getting-engaged.jpg'
+alt: 'Getting engaged celebration and advice'
 summary: "Getting engaged celebrates love, commitment, and the beginning of a shared future. There's no 'right' way to proposeâ€”only yours. This comprehensive guide covers proposal planning, announcements, home building, modern etiquette, and finding the perfect engagement gifts. Discover why experiential gifts often outshine registry items in creating lasting memories."
 ---
 

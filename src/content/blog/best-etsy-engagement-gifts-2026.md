@@ -3,7 +3,8 @@ title: "The Ultimate Guide to the Best Etsy Engagement Gifts for 2026: 15+ Uniqu
 description: "Discover the best personalized engagement gifts on Etsy for 2026, from custom ring dishes to star maps, embroidered apparel, and planning essentials that celebrate your loved one's special milestone."
 pubDate: 2026-03-12
 updatedDate: 2026-03-13
-heroImage: ../../assets/etsy-engagement-gifts.jpg
+heroImage: '../../assets/etsy-engagement-gifts.jpg'
+alt: 'Best Etsy engagement gift ideas for 2026'
 summary: "Shop Etsy for the best personalized engagement gifts that go beyond generic retail. From minimalist ceramic ring dishes and custom watercolor venue portraits to embroidered sweatshirts and milestone wine labels, discover 15+ unique gift ideas that celebrate your loved one's engagement while supporting independent artists and small businesses."
 ---
 

@@ -4,6 +4,7 @@ description: "Discover the beauty of engagement map gifts. Learn about personali
 pubDate: 2026-03-15
 updatedDate: 2026-03-15
 heroImage: '../../assets/engagement-map-gift.jpg'
+alt: 'Personalized engagement map gift showing proposal location'
 category: "engagement"
 summary: "Turn your engagement location into a meaningful work of art with a personalized engagement map gift. From minimalist designs to star maps and multi-location love stories, discover how to create a keepsake that celebrates where your love story began. Perfect for engagement parties, showers, or as a wedding gift."
 ---

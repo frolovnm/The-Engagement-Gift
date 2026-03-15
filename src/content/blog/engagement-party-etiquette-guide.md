@@ -4,6 +4,7 @@ description: "Navigate engagement party gifting etiquette with confidence. Learn
 pubDate: 2026-03-14
 updatedDate: 2026-03-14
 heroImage: '../../assets/engagement-party-gift-etiquette.jpg'
+alt: 'Engagement party gift etiquette and ideas'
 category: "engagement"
 summary: "Confused about engagement party etiquette? Discover whether you should bring a gift, how much to spend, and creative gift ideas that celebrate the couple's milestone. From champagne toasts to personalized keepsakes, find the perfect present for every scenario and budget."
 ---

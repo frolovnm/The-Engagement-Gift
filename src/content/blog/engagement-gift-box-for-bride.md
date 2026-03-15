@@ -4,6 +4,7 @@ description: "Learn how to create a personalized engagement gift box for the bri
 pubDate: 2026-03-15
 updatedDate: 2026-03-15
 heroImage: '../../assets/the-engagement-gift-box-for-the-bride.jpg'
+alt: 'Beautiful personalized engagement gift box for the bride'
 category: "engagement"
 summary: "Discover the art of creating a meaningful engagement gift box for the bride. From personalized keepsakes and self-care items to wedding planning essentials, learn how to curate a thoughtful collection that celebrates her special moment. Explore DIY tips, luxury options, and presentation ideas."
 ---

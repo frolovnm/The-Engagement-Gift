@@ -4,6 +4,7 @@ description: 'Discover meaningful, luxurious, and thoughtful engagement gifts th
 pubDate: 'Feb 12 2026'
 updatedDate: 2026-03-13
 heroImage: '../../assets/engagement-photo.jpg'
+alt: 'Engaged couple celebrating together'
 summary: "Celebrate her engagement with meaningful gifts beyond the ring. Personalized jewelry, luxury spa experiences, and sentimental keepsakes create lasting memories. Options range from budget-friendly personalized stationery to luxurious weekend getaways. Group gifting lets friends and family pool resources for more elaborate presents that reflect her unique style and personality."
 ---
 

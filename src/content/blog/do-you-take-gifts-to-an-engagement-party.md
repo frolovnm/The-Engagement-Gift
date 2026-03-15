@@ -4,6 +4,7 @@ description: "Engagement party gifts are appreciated but not mandatory—your pr
 pubDate: 2026-02-14
 updatedDate: 2026-03-13
 heroImage: '../../assets/engagement-party-gifts.jpg'
+alt: 'Do you take gifts to an engagement party'
 summary: "Engagement party gifts are appreciated but not required—your presence matters most. Budget $25–$75 for celebration-focused gifts like champagne, wine glasses, or experience vouchers rather than household essentials. Modern etiquette is flexible; handwritten cards often mean more than the gift itself. Your thoughtful presence at the party is the true celebration."
 ---
 
